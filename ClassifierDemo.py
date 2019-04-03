@@ -54,8 +54,11 @@ net = Net()
 
 if __name__ == '__main__':
 
-    device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print(device)
+
+    if torch.cuda.device_count() > 1:
+        net = nn.DataParallel(net, device_ids=[0,1,2])
 
     net.to(device)
     # dataiter = iter(trainloader)
