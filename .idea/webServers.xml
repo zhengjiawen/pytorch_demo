@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="46741c66-6b67-46c7-a209-4d431d370aad" name="lab" url="http://119.29.13.213">
+        <fileTransfer host="119.29.13.213" port="1218" rootFolder="/data/home/zjw/pythonFile" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="1218" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
